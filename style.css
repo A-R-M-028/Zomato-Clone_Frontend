@@ -38,7 +38,7 @@ body {
     color: #fff;
     border: none;
     padding: 12px;
-    border-radius: 6px;
+    border-radius: 10px;
     font-weight: 600;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .hero_text {
     /* Try to multiple of 4 -> font size -> best practice*/
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
     margin: 20px 0;
     color: #1d3557;
@@ -84,8 +84,11 @@ body {
 .food_card_image_container {
     width: 100%;
 }
+.restaurants_testimonials {
+    width: 100%;
+}
 
-.food_image {
+.food_image{
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
@@ -99,10 +102,97 @@ body {
     text-align: center;
 }
 
+.restaurants_testimonials{
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+    padding: 0 30px;
+}
+.user_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#email_input {
+    border: none;
+    align-items: center;
+    background-color: f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.quote_container {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    /* 100% of parent or browser */
+    width: 100%;
+    border-radius: 13px;
+
+}
+
+.man_image {
+    position: absolute;
+    height: 200px;
+    /* 100% of parent or browser */
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+
+}
+
+.quote_text {
+    z-index: 3;
+    color: 3;
+    text-align: center;
+    /* root emphasize -> nearest parent font size */
+    margin: 0 1rem;
+
+}
+
+.footer_container {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 50px;
+    border-radius: 10px 10px 0 0 ;
+    font-weight: 600;
+    display: flex;
+}
+
+
+.footer_brand_logo_container {
+    width: 200px;
+}
+
+.footer_brand_logo {
+    width: 50%;
+    background-color: #ebf2ff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: left;
+}
+
+
 @media (min-width: 768px) {
     .navbar {
         justify-content: space-between;
-        padding: 10px 30px;
+        padding: 10px 50px;
     }
 
     .hero_container {
@@ -120,8 +210,8 @@ body {
     }
 
     #pizza_card {
-        margin-top: -20px;
-        margin-bottom: 30px;
+        margin-top: -30px;
+        margin-bottom: 20px;
     }
 
     .explore_menu_container {
@@ -133,7 +223,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 110%;
         background-image: linear-gradient(
             to right,
             #ff512f 0%,
@@ -141,9 +231,9 @@ body {
             #ff512f 100%
         );
         /* Use z index -> to see images under background */
-        z-index: -3;
+        z-index: -15;
         /* For the parellogram shapes */
-        transform: skewY(-5deg);
+        transform: skewY(-4deg);
     }
 
 }
@@ -181,6 +271,23 @@ body {
     } */
     .explore_menu_text {
         font-size: 48px;
+    }
+
+    .footer_container {
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        color: #fff;
+        border: none;
+        padding: 50px;
+        border-radius: 10px 10px 0 0 ;
+        font-weight: 600;
+        display: flex;
+        justify-content:space-evenly;
+          
     }
 
 }

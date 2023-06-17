@@ -7,12 +7,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Zomato Homepage</title>
     <!-- Mobile First Approach -->
     <!-- Here I will use display flex***** not inline(outdated) -->
 </head>
 <body>
-    <body>
         <header>
         <nav class="navbar">
             <div class="navbar_brand">
@@ -46,8 +45,8 @@
         <!-- Explore Menu -->
         <section class="explore_menu_container">
             <h1 class="explore_menu_text">Expore Our Menu</h1>
+            <!-- This is gradient background -->
             <div class="explore_menu_gradient_bg">
-
             </div>
             <div class="explore_menu_lists">
                 <!-- Burger -->
@@ -82,9 +81,65 @@
                 </div>
             </div>
         </section>
+        <!-- View More -->
+        <section  class="view_more">
+            <div>
+                <button class="button_primary">View More</button>
+            </div>
+        </section>
 
-    </main>
-    </body>
-    
+        <!-- Heading -->
+        <h1 class="explore_menu_text">Order From 100s of restaurants</h1>
+        <section  class="restaurants_testimonials">
+                                <div class="food_card_image_container">
+                                    <img src="assets/restaurant1.jpg" alt="restaurant1" class="food_image">
+                                </div>
+                                <div class="food_card_image_container">
+                                    <img src="assets/restaurant2.jpg" alt="restaurant1" class="food_image">
+                                </div>
+                                <div class="food_card_image_container">
+                                    <img src="assets/restaurant3.jpg" alt="restaurant3" class="food_image">
+                                </div>
+                                <div class="food_card_image_container">
+                                    <img src="assets/restaurant4.jpg" alt="restaurant4" class="food_image">
+                                </div>
+        </section>
+
+         <!-- Heading & User Input -->
+         <h1 class="explore_menu_text">Stay Updated</h1>
+         <section class="user_input">
+            <div> 
+                <input type="email" placeholder="xyz@gmail.com" name="email_input" id="email_input"></div>
+            <div>
+                <button class="button_primary">Get Updates</button>
+            </div>
+         </section>
+
+         <section class="quote_container">
+            <div class="man_image">
+                <!-- Here picture will be inegrated -->
+            </div>
+            <div class="quote_text">
+                <h2>When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+            </div>
+         </section>
+    </main> 
+
+    <footer class="footer_container">
+        <div class="footer_brand_logo_container">
+            <img src="assets/logo.png" alt="brand" class="footer_brand_logo">
+        </div>
+        <div class="contents">
+            <p>Pricing
+                <br>
+                Terms and condition
+                <br>
+                Partnership
+                <br>
+                Career
+                <br>
+                Contact</p>
+        </div>
+    </footer>
 </body>
 </html>
