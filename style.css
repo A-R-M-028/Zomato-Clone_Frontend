@@ -83,6 +83,7 @@ body {
 
 .food_card_image_container {
     width: 100%;
+
 }
 .restaurants_testimonials {
     width: 100%;
@@ -105,21 +106,27 @@ body {
 .restaurants_testimonials{
     margin-top: 50px;
     display: flex;
+    padding: 30 0px 30px 0px;
+    display: grid;
+    /* fractional unit -> Spacing */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    padding: 0 30px;
+
 }
+
 .user_input {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
+    gap: 50px;
 }
 
 #email_input {
     border: none;
     align-items: center;
     background-color: f9f9f9;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     width: 100%;
 
@@ -137,6 +144,7 @@ body {
     /* 100% of parent or browser */
     width: 100%;
     border-radius: 13px;
+    
 
 }
 
@@ -147,8 +155,9 @@ body {
     width: 100%;
     border-radius: 13px;
     background-color: #0a4065;
-    opacity: 49%;
-
+    opacity: 70%;
+    background: url(//images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80)
+    center center / cover no-repeat;
 }
 
 .quote_text {
@@ -234,6 +243,10 @@ body {
         z-index: -15;
         /* For the parellogram shapes */
         transform: skewY(-4deg);
+    }
+    .restaurants_testimonials {
+        /* fractional unit -> Spacing */
+    grid-template-columns: repeat(4, 1fr);
     }
 
 }
