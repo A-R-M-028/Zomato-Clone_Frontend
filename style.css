@@ -1,308 +1,290 @@
 /* Justify -> Main axis, align-item -> cross axis */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Merriweather', serif;
-    background-color: #ebf2ff;
+  font-family: "Merriweather", serif;
+  background-color: #ebf2ff;
 }
 
 .navbar {
-    /* Prop inside parent */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
-
+  /* Prop inside parent */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
 }
 
 .navbar_brand {
-    width: 100px;
+  width: 100px;
 }
 
 .navbar_logo {
-    width: 100%;
+  width: 100%;
 }
 
 .button_primary {
-    background-image: linear-gradient(
-        /* This is direction */
-        to right,
-        /* One by one color */
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    );
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
-    font-weight: 600;
+  background-image: linear-gradient(
+    /* This is direction */ to right,
+    /* One by one color */ #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .button_primary:hover {
-    border: 2px solid #ff6767;
-    cursor: pointer;
+  border: 2px solid #ff6767;
+  cursor: pointer;
 }
 
 .container {
-    max-width: 100%;
-    padding: 20px;
-    margin: 0 auto;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .hero_image_container {
-    width: 100%;
+  width: 100%;
 }
 
 .hero_image {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
 }
 
 .hero_text {
-    /* Try to multiple of 4 -> font size -> best practice*/
-    font-size: 40px;
-    font-weight: 900;
-    margin: 20px 0;
-    color: #1d3557;
-
+  /* Try to multiple of 4 -> font size -> best practice*/
+  font-size: 40px;
+  font-weight: 900;
+  margin: 20px 0;
+  color: #1d3557;
 }
 
 .food_card_description {
-    padding: 15px;
-    
+  padding: 15px;
 }
 
 .food_card {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .food_card_image_container {
-    width: 100%;
-
+  width: 100%;
 }
 .restaurants_testimonials {
-    width: 100%;
+  width: 100%;
 }
 
-.food_image{
-    width: 100%;
-    border-radius: 8px 8px 0 0;
+.food_image {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
 }
 
 .explore_menu_text {
-    font-size: 30px;
-    color: #1d3557;
-    font-weight: 800;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 30px;
+  color: #1d3557;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.restaurants_testimonials{
-    margin-top: 50px;
-    display: flex;
-    padding: 30 0px 30px 0px;
-    display: grid;
-    /* fractional unit -> Spacing */
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-
+.restaurants_testimonials {
+  margin-top: 50px;
+  display: flex;
+  padding: 30 0px 30px 0px;
+  display: grid;
+  /* fractional unit -> Spacing */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 
 .user_input {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 50px;
 }
 
 #email_input {
-    border: none;
-    align-items: center;
-    background-color: f9f9f9;
-    padding: 15px;
-    border-radius: 10px;
-    width: 100%;
-
+  border: none;
+  align-items: center;
+  background-color: f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .quote_container {
-    position: relative;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
-    /* 100% of parent or browser */
-    width: 100%;
-    border-radius: 13px;
-    
-
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  /* 100% of parent or browser */
+  width: 100%;
+  border-radius: 13px;
 }
 
 .man_image {
-    position: absolute;
-    height: 200px;
-    /* 100% of parent or browser */
-    width: 100%;
-    border-radius: 13px;
-    background-color: #0a4065;
-    opacity: 70%;
-    background: url(//images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80)
+  position: absolute;
+  height: 200px;
+  /* 100% of parent or browser */
+  width: 100%;
+  border-radius: 13px;
+  background-color: #0a4065;
+  opacity: 70%;
+  background: url(//images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80)
     center center / cover no-repeat;
 }
 
 .quote_text {
-    z-index: 3;
-    color: 3;
-    text-align: center;
-    /* root emphasize -> nearest parent font size */
-    margin: 0 1rem;
-
+  z-index: 3;
+  color: 3;
+  text-align: center;
+  /* root emphasize -> nearest parent font size */
+  margin: 0 1rem;
 }
 
 .footer_container {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  color: #fff;
+  border: none;
+  padding: 50px;
+  border-radius: 10px 10px 0 0;
+  font-weight: 600;
+  display: flex;
+}
+
+.footer_brand_logo_container {
+  width: 200px;
+}
+
+.footer_brand_logo {
+  width: 50%;
+  background-color: #ebf2ff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+
+  .hero_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .explore_menu_lists {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+    padding: 0 30px;
+  }
+
+  #pizza_card {
+    margin-top: -30px;
+    margin-bottom: 20px;
+  }
+
+  .explore_menu_container {
+    position: relative;
+  }
+
+  .explore_menu_gradient_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
     background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    /* Use z index -> to see images under background */
+    z-index: -15;
+    /* For the parellogram shapes */
+    transform: skewY(-4deg);
+  }
+  .restaurants_testimonials {
+    /* fractional unit -> Spacing */
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+  .navbar_brand {
+    width: 150px;
+  }
+
+  .button_primary {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .hero-description {
+    width: 100%;
+  }
+
+  .hero_text {
+    font-size: 50px;
+  }
+
+  .explore_menu_lists {
+    /* margin-top: 50px;
+        display: flex; */
+    gap: 25px;
+  }
+
+  /* #pizza_card {
+        margin-top: -20px;
+        margin-bottom: 30px;
+    } */
+  .explore_menu_text {
+    font-size: 48px;
+  }
+
+  .footer_container {
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
     );
     color: #fff;
     border: none;
     padding: 50px;
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
     font-weight: 600;
     display: flex;
+    justify-content: space-evenly;
+  }
 }
-
-
-.footer_brand_logo_container {
-    width: 200px;
-}
-
-.footer_brand_logo {
-    width: 50%;
-    background-color: #ebf2ff;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: left;
-}
-
-
-@media (min-width: 768px) {
-    .navbar {
-        justify-content: space-between;
-        padding: 10px 50px;
-    }
-
-    .hero_container {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .explore_menu_lists {
-        margin-top: 50px;
-        display: flex;
-        gap: 15px;
-        padding: 0 30px;
-    }
-
-    #pizza_card {
-        margin-top: -30px;
-        margin-bottom: 20px;
-    }
-
-    .explore_menu_container {
-        position: relative;
-    }
-
-    .explore_menu_gradient_bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 110%;
-        background-image: linear-gradient(
-            to right,
-            #ff512f 0%,
-            #dd2476 51%,
-            #ff512f 100%
-        );
-        /* Use z index -> to see images under background */
-        z-index: -15;
-        /* For the parellogram shapes */
-        transform: skewY(-4deg);
-    }
-    .restaurants_testimonials {
-        /* fractional unit -> Spacing */
-    grid-template-columns: repeat(4, 1fr);
-    }
-
-}
-
-@media (min-width: 1024px) {
-    .container {
-        max-width: 80%;
-    }
-    .navbar_brand {
-        width: 150px;
-    }
-
-    .button_primary {
-        padding: 20px;
-        font-size: 20px;
-    }
-
-    .hero-description {
-        width: 100%;
-    }
-
-    .hero_text {
-        font-size: 50px;
-    }
-
-    .explore_menu_lists {
-        /* margin-top: 50px;
-        display: flex; */
-        gap: 25px;
-    }
-
-    /* #pizza_card {
-        margin-top: -20px;
-        margin-bottom: 30px;
-    } */
-    .explore_menu_text {
-        font-size: 48px;
-    }
-
-    .footer_container {
-        background-image: linear-gradient(
-            to right,
-            #ff512f 0%,
-            #dd2476 51%,
-            #ff512f 100%
-        );
-        color: #fff;
-        border: none;
-        padding: 50px;
-        border-radius: 10px 10px 0 0 ;
-        font-weight: 600;
-        display: flex;
-        justify-content:space-evenly;
-          
-    }
-
-}
-
-
