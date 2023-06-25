@@ -9,11 +9,57 @@ body {
   background-color: #ebf2ff;
 }
 
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: #333;
+  color: #fff;
+}
+/*  This selector targets elements with the class foot that are descendants of an element with the class dark-mode. */
+
+/* .dark-mode .navbar {
+  background-color: #333;
+  color: #fff;
+} */
+/* This selector targets elements with either the class dark-mode or the class foot.*/
+
+.dark-mode .card {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .foot {
+  background-color: #222;
+  color: #fff;
+}
+.nav_item_button_primary_dark {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 51%,
+    rgb(0, 0, 0) 100%
+  );
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.nav_item_button_primary_dark:hover {
+  border: 2px solid #000000;
+  cursor: pointer;
+}
+
 .navbar {
   /* Prop inside parent */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content:space-evenly;
   background-color: #fff;
 }
 
@@ -79,6 +125,7 @@ body {
 .food_card_image_container {
   width: 100%;
 }
+
 .restaurants_testimonials {
   width: 100%;
 }
@@ -105,6 +152,11 @@ body {
   /* fractional unit -> Spacing */
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
+
+}
+
+.r {
+  margin-top: 50px;
 }
 
 .user_input {
@@ -146,8 +198,8 @@ body {
   border-radius: 13px;
   background-color: #0a4065;
   opacity: 70%;
-  background: url(//images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80)
-    center center / cover no-repeat;
+  background: url('//images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80')
+    center / cover no-repeat;
 }
 
 .quote_text {
@@ -214,6 +266,14 @@ body {
     position: relative;
   }
 
+  #r3 {
+    margin-top: -50px !important;
+  }
+
+  #r2 {
+    margin-top: 50px !important;
+  }
+
   .explore_menu_gradient_bg {
     position: absolute;
     top: 0;
@@ -245,7 +305,7 @@ body {
     width: 150px;
   }
 
-  .button_primary {
+  .button_primary, .nav_item_button_primary_dark {
     padding: 20px;
     font-size: 20px;
   }
@@ -259,15 +319,16 @@ body {
   }
 
   .explore_menu_lists {
-    /* margin-top: 50px;
-        display: flex; */
+    margin-top: 50px;
+    display: flex;
     gap: 25px;
   }
 
-  /* #pizza_card {
-        margin-top: -20px;
-        margin-bottom: 30px;
-    } */
+  #pizza_card {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    }
+
   .explore_menu_text {
     font-size: 48px;
   }
@@ -279,6 +340,7 @@ body {
       #dd2476 51%,
       #ff512f 100%
     );
+
     color: #fff;
     border: none;
     padding: 50px;
